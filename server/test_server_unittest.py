@@ -40,3 +40,6 @@ class TestGraphLib(unittest.TestCase):
         # Negative testcase
         self.assertEqual(self.graph.distance_between_nodes(graph_id, 1, 6),
                          "Error: Either source 1 or target 6 is not in G")
+
+if __name__ == '__main__':
+    unittest.main()
