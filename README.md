@@ -21,7 +21,7 @@ After starting the server,in a new terminal start the client by excecuting the b
 This will trigger an interactive terminal in which the user can interact with the server. The screenshot below shows all the 3 operations. System is designed to accept graphs from csv files containing edges. Each row of the csv file contains a source and target node. If a standalone node needs to be inserted then one can leave the target/source csv entry blank or write "nan".  
 
 
-<img src = "images/Sample_client_run.png" width="1001">
+<img src = "images/Sample_client_run.png" height="1200" width="1001">
 
 ## Testing and Results
 
@@ -41,6 +41,10 @@ Results for the unit test
 All three server functionalites have be tested and can be verfied by running
 
 python client/test_functionality.py
+
+Results for the Functional test
+
+<img src = "images/functional_tests.png" width="1001">
 
 ### Performance Testing
 
