@@ -1,0 +1,6 @@
+SERVER_STARTED = "Server Started"
+PORT_ADDRESS = "[::]:50052"
+NOT_A_NODE = "nan"
+INT64_LIMIT = 9223372036854775805
+ERROR = "Error: "
+GRAPH_NOT_FOUND = "Graph id not found."

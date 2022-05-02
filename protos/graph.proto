@@ -1,0 +1,40 @@
+// File defines the data type schema and services for the Graph library handling
+syntax = "proto3";
+package data;
+
+service GraphOperations {
+  rpc CreateGraph (Graph) returns (CreateResponse) {}
+  rpc GetDistance (SourceTarget) returns (DistResponse) {}
+  rpc DeleteGraph (GraphId) returns (DeleteResponse) {}
+}
+
+message Edge {
+  string start = 1;
+  string end = 2;
+}
+
+message Graph {
+  repeated Edge graph = 1;
+}
+
+message GraphId {
+  string graphid = 1;
+}
+
+message SourceTarget {
+  string source = 1;
+  string target = 2;
+  string graphid = 3;
+}
+
+message DistResponse {
+  string response = 1;
+}
+
+message DeleteResponse {
+  bool response = 1;
+}
+
+message CreateResponse {
+  int64 response = 1;
+}

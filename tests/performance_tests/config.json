@@ -1,0 +1,18 @@
+{
+    "proto": "protos/graph.proto",
+    "call": "data.GraphOperations.GetDistance",
+    "concurrency": 5,
+    "load-schedule": "step",
+    "load-start":2000,
+    "load-end":5000,
+    "load-step":1000,
+    "load-step-duration":"1s",
+    "insecure": true,
+    "data": {
+        "source": "1",
+        "target": "2",
+        "graphid": "1"
+    },
+    "max-duration": "8s",
+    "host": "0.0.0.0:50052"
+}
